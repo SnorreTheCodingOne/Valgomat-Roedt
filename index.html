@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" title="mainSheet">
+    <title>S&S Valgomat!</title>
+</head>
+
+<body>
+    <div>
+        <h1>Rødt</h1>
+        <h2>Mot Forskjells-Norge</h2>
+        <p>
+            Rødts ønsker å skape et vendepunkt mot Forskjells-Norge.<br>
+            Med et fremvoksende Forskjells-Norge, betyr det at de på toppen får stadig mer,<br>
+            mens vanlige mennesker strever mer og mer.
+        </p>
+        <h2>Arbeidsliv</h2>
+        <p>
+            Rødt mener at ingen bør miste dagpenger eller arbeidsavklaringspenger<br>
+            uten å ha tilbud om en eller annen anstendig inntekt.<br>
+            De vil øke dagpengenivået permanent, spesielt for lavtlønnede,<br>
+            og i tilleg la de som har vært arbeidsledige få feriepenger igjen. 
+        </p>
+        <h2>Rettferdig miljøpolitikk</h2>
+        <p>
+            Rødt jobber for en rettferdig miljøpolitikk, som får ned både ulikheten,<br>
+            utslippene, og stopper tap av natur. Tiltakene de vil sette in skal skille<br>
+            mellom de som har mye og lite, mellom de som driver med<br>
+            grunnleggende forbruk og luksusforbruk, og mellom by og bygd.
+        </p>
+        <h2>Profittfri velferd</h2>
+        <p>
+            Rødt vil at skattepenger som settes av til velferd, faktisk skal gå til velferd,<br>
+            og ikke i lommene på noen private eiere, eller "velferdsprofitørene". 
+        </p>
+        <h2>Ut av EØS</h2>
+        <p>
+            Rødt vil fjerne frihandelsavtaler som tvinger gjennom privatisering og liberalisering,<br>
+            som øker profitten på bekostning av arbeidsfolk, velferd og miljø,<br>
+            og som tar makten vekk fra folk og folkevalgte. 
+        </p>
+    </div>
+    <div id="valgomat">
+        <h1>Start valgomat</h1>
+        <div id="qText">
+            <img src="./RodtLogo.png" width="50%"><br>
+        </div>
+        <label for="yes"><input type="radio" id="yes" name="quest"> Enig</label>
+        <label for="no"><input type="radio" id="no" name="quest"> Uenig</label>
+        <input type="submit" id="qButton" onclick="nextQ()" value="Start">
+        <div id="meter" class="meter">
+            <span id="progText" style="width:0%"></span>
+        </div>
+    </div>
+    <p id="footer">
+        Nettside laget av Snorre Soknes Forbregd<br>
+        Informasjon funnet av Sigrid Fjelle
+    </p>
+
+    <script src="./script.js"></script>
+</body>

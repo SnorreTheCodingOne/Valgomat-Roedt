@@ -1,0 +1,145 @@
+html, body {
+    background-color: #e1223a;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI';
+    padding-top: 10px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 0%;
+    margin-top: 10px;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 0%;
+    margin-top: 10px;
+}
+#qText {
+    opacity: 1;
+}
+
+input,
+label {
+    display: none;
+}
+label>input,
+div>label {
+    margin: auto;
+    position: relative;
+
+}
+#qButton {
+    display: unset;
+}
+input#qButton {
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 25px;
+    width: 100px;
+    height: 75px;
+    position: relative;
+    bottom: 20px;
+    margin: auto;
+    top:5px;   
+    
+}
+div {
+    border-radius: 75px;
+    background-color: #fbfbfb;
+    width: 70%;
+    min-height: 200px;
+    padding: 10px;
+    margin: auto;
+    top: 10px;
+    margin-bottom: 50px;
+    margin-top: -20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+div#qText {
+    align-self: center;
+    position: relative;
+    min-height:50px;
+}
+#meter {
+    visibility:hidden;
+}
+#footer {
+    font-size: 8px;
+    position: fixed;
+    bottom:5px;
+    right: 5px;
+}
+/*Fra Chris Coyier på codepen.io*/
+.meter {
+    position: relative;
+    bottom: 10px;
+    margin-top: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    box-sizing: content-box;
+    min-height: 20px;
+    background: #555;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+img {
+    margin: auto;
+}
+/*Fra Chris Coyier på codepen.io*/
+.meter>span {
+    display: block;
+    height: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(194, 43, 43);
+    background-image: linear-gradient(center bottom,
+            rgb(194, 43, 43) 37%,
+            rgb(194, 43, 43) 69%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+/*Fra Chris Coyier på codepen.io*/
+.meter>span:after,
+.animate>span>span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(-45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+/*Fra Chris Coyier på codepen.io*/
+@keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
